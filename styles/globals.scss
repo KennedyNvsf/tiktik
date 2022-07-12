@@ -1,0 +1,55 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  gap: 1.5rem; /* 24px */
+  
+}
+//responsiveness
+@media (min-width: 768px) {
+  .app-container {
+    gap: 5rem; /* 80px */
+  }
+ }
+
+ .sidebar-container {
+  height: 92vh;
+  overflow: hidden;
+ }
+//responsiveness
+@media (min-width: 1280px) { 
+  .sidebar-container {
+    &:hover {
+      overflow: auto;
+    }
+  }
+}
+
+.content-container {
+  margin-top: 1rem; /* 16px */
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  flex: 1 1 0%;
+  height: 88vh;
+  gap: 2.5rem; /* 40px */
+}
+
+.videos {
+  
+}
