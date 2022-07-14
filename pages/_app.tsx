@@ -1,6 +1,9 @@
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import {useState, useEffect }from "react"
+//component
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
@@ -13,12 +16,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   if(isSSR) return null;
 
   return (
-    <div className="app-container">
-      Navbar
-      <div className=".sidebar-container">Sidebar</div>
+   <div>
+     <Navbar/>
+     <div className="app-container">
+      <div className=".sidebar-container"><Sidebar/></div>
       <div className="content-container"><Component {...pageProps} /></div>
-      
     </div>
+   </div>
   )
 }
 
