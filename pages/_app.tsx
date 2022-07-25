@@ -2,8 +2,8 @@ import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import {useState, useEffect }from "react"
 //component
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/navbar/Navbar";
+import Sidebar from "../components/sidebar/Sidebar";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
